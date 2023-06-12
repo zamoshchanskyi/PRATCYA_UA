@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pratcya_uaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="logpass">
+    <Key>
+      <PropertyRef Name="Login" />
+    </Key>
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="personalWorker" Relationship="Self.logpass_personalWorker" FromRole="logpass" ToRole="personalWorker" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="vacancy" Relationship="pratcya_uaModel.vacancy_logpass" FromRole="logpass" ToRole="vacancy" />
+    <Property Name="RoleID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="personalWorker">
+    <Key>
+      <PropertyRef Name="Login" />
+    </Key>
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Patronymic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="logpass" Relationship="Self.logpass_personalWorker" FromRole="personalWorker" ToRole="logpass" />
+    <Property Name="DataOfBirthWorker" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ActivityWorker" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EducationWorker" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="logpass_personalWorker">
+    <End Type="Self.personalWorker" Multiplicity="1" Role="personalWorker" />
+    <End Type="Self.logpass" Multiplicity="0..1" Role="logpass" />
+    <ReferentialConstraint>
+      <Principal Role="personalWorker">
+        <PropertyRef Name="Login" />
+      </Principal>
+      <Dependent Role="logpass">
+        <PropertyRef Name="Login" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="pratcyaUAEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="logpass" EntityType="Self.logpass" />
+    <EntitySet Name="personalWorker" EntityType="Self.personalWorker" />
+    <AssociationSet Name="logpass_personalWorker" Association="Self.logpass_personalWorker">
+      <End EntitySet="personalWorker" Role="personalWorker" />
+      <End EntitySet="logpass" Role="logpass" />
+    </AssociationSet>
+    <EntitySet Name="vacancy" EntityType="pratcya_uaModel.vacancy" />
+    <AssociationSet Name="vacancy_logpass" Association="pratcya_uaModel.vacancy_logpass">
+      <End Role="logpass" EntitySet="logpass" />
+      <End Role="vacancy" EntitySet="vacancy" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="vacancy">
+    <Key>
+      <PropertyRef Name="Login" />
+    </Key>
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="position" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="salary" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="employment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="logpass" Relationship="pratcya_uaModel.vacancy_logpass" FromRole="vacancy" ToRole="logpass" />
+    <Property Name="Login_Vidgyk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="vacancy_logpass">
+    <End Type="pratcya_uaModel.logpass" Role="logpass" Multiplicity="1" />
+    <End Type="pratcya_uaModel.vacancy" Role="vacancy" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="logpass">
+        <PropertyRef Name="Login" />
+      </Principal>
+      <Dependent Role="vacancy">
+        <PropertyRef Name="Login" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,77 @@
+﻿<Window x:Class="ChatClient.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatClient"
+        mc:Ignorable="d"
+        Title="Registration" Height="445" Width="460"
+        Background="#FF1E1E1B" Foreground="#FF272727">
+    <Grid Margin="0,0,2,1">
+        <TextBlock x:Name="reg" 
+                   HorizontalAlignment="Left" 
+                   TextWrapping="Wrap" VerticalAlignment="Top"
+                   Foreground="#FF1E1E1E" Margin="255,55,0,0" 
+                   Width="160" FontSize="64" 
+                   FontFamily="Segoe UI Black" 
+                   Background="#FFADFF00" 
+                   FontWeight="Black">
+            <Run Background="#FFADFF00" 
+                 FontSize="12" Text=" "/>
+            <Run Background="#FFADFF00" 
+                 FontSize="22" Text="Реєстрація"/></TextBlock>
+        <TextBox 
+            x:Name="tb_LoginReg"
+            HorizontalAlignment="Left" 
+            Height="40" Margin="35,118,0,0" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Top" 
+            Width="380" FontSize="24"/>
+        <PasswordBox
+            x:Name="tb_PassReg"
+            HorizontalAlignment="Left" 
+            Height="40" Margin="35,201,0,0"
+            VerticalAlignment="Top" 
+            Width="380" FontSize="24"/>
+
+        <Label Content="Логін" 
+               HorizontalAlignment="Left" 
+               Height="40" Margin="35,78,0,0" 
+               VerticalAlignment="Top" 
+               Width="170" FontSize="20" Foreground="White" />
+        <Label Content="Пароль" 
+               HorizontalAlignment="Left" 
+               Height="40" Margin="35,161,0,0"
+               VerticalAlignment="Top" 
+               Width="135" FontSize="20" Foreground="White"/>
+
+        <RadioButton
+            x:Name="rbWorker"
+            Content="Шукаю роботу" 
+            HorizontalAlignment="Left" 
+            Height="25" Margin="35,268,0,0"
+            VerticalAlignment="Top" 
+            Width="170" FontSize="15" 
+            Checked="RadioButton_Worker" Foreground="White"/>
+        <RadioButton
+            x:Name="rbEmployer"
+            Content="Роботодавець" 
+            HorizontalAlignment="Left" 
+            Height="25" Margin="291,268,0,0"
+            VerticalAlignment="Top" 
+            Width="124" FontSize="15" 
+            Checked="RadioButton_Employer" Foreground="White"/>
+
+        <Button 
+            Background="#FFADFF03"
+                FontFamily="Segoe UI Semibold"
+            x:Name="bt_RegisterDone"
+            Content="Зареєструватися" 
+            HorizontalAlignment="Left" 
+            Height="60" Margin="165,323,0,0" 
+            VerticalAlignment="Top" 
+            Width="130" FontSize="15" Click="bt_RegisterDone_Click"/>
+
+    </Grid>
+</Window>

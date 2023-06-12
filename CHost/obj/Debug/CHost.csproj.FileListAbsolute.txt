@@ -1,0 +1,15 @@
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\CHost.exe.config
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\CHost.exe
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\CHost.pdb
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\job_finder.dll
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\job_finder.pdb
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\job_finder.dll.config
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\obj\Debug\CHost.csproj.AssemblyReference.cache
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\obj\Debug\CHost.csproj.CoreCompileInputs.cache
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\obj\Debug\CHost.csproj.CopyComplete
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\obj\Debug\CHost.exe
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\obj\Debug\CHost.pdb
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\Newtonsoft.Json.dll
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\Newtonsoft.Json.xml
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\nunit.framework.dll
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\CHost\bin\Debug\nunit.framework.xml

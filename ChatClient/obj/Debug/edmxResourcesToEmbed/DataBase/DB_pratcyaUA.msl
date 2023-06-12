@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище pratcya_uaModelContainer" CdmEntityContainer="pratcyaUAEntities1">
+    <EntitySetMapping Name="logpass">
+      <EntityTypeMapping TypeName="pratcya_uaModel.logpass">
+        <MappingFragment StoreEntitySet="logpass">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="personalWorker">
+      <EntityTypeMapping TypeName="pratcya_uaModel.personalWorker">
+        <MappingFragment StoreEntitySet="personalWorker">
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="EducationWorker" ColumnName="EducationWorker" />
+          <ScalarProperty Name="ActivityWorker" ColumnName="ActivityWorker" />
+          <ScalarProperty Name="DataOfBirthWorker" ColumnName="DataOfBirthWorker" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vacancy">
+      <EntityTypeMapping TypeName="pratcya_uaModel.vacancy">
+        <MappingFragment StoreEntitySet="vacancy">
+          <ScalarProperty Name="Login_Vidgyk" ColumnName="Login_Vidgyk" />
+          <ScalarProperty Name="employment" ColumnName="employment" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

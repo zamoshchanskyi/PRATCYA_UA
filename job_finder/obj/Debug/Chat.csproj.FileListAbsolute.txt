@@ -1,0 +1,11 @@
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\bin\Debug\job_finder.dll.config
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\bin\Debug\job_finder.dll
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\bin\Debug\job_finder.pdb
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\obj\Debug\Chat.csproj.CopyComplete
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\obj\Debug\job_finder.dll
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\obj\Debug\job_finder.pdb
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\bin\Debug\nunit.framework.dll
+C:\Users\maksy\OneDrive\Рабочий стол\student3.0\ІПЗ\program\job_finder\bin\Debug\nunit.framework.xml
